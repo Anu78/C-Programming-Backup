@@ -1,0 +1,10 @@
+Adding git changes and pushing to repository:
+
+Add the changes to the stating area:
+git add .
+
+Then commit the change, like normal:
+git commit -m "Commit"
+
+Then push the new repository to the one on GitHub:
+git push origin master
