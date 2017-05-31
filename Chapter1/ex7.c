@@ -3,10 +3,4 @@
 int main()
 {
     printf("\n",EOF);
-
-
-
-
-
-
 }

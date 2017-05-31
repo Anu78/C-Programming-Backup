@@ -1,7 +1,7 @@
 gcc=gcc
 astyle=astyle
 rm=rm
-HOME=/home/anu/exeDir
+HOME=/home/anuraag/exeDir
 
 % : %.c
 	$(gcc) $@.c -g -o $(HOME)/$@

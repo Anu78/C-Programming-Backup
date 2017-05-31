@@ -12,7 +12,7 @@ int main()
         {
             putchar(c);
             while((c = getchar()) == ' ')
-                {}
+            {}
         }
         if(c != EOF)
             putchar(c);

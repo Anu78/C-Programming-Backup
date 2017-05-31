@@ -1,16 +1,26 @@
-/*Prints input one word per line.*/
 #include <stdio.h>
+#define IN 1
+#define OUT 0
 
-#define IN 1;
-#define OUT 0;
-
-int main(int argv, char argc[])
+int main()
 {
-    int c;
+    int c,nl,nw,nc,state;
+    state = OUT;
+    nl=nw=nc=0;
     while((c=getchar()) != EOF) {
+        ++nc;
+        printf("%c",c);
 
-
-
-
+        if(c=='\n')
+            ++nl;
+        if(c == ' ' || c == '\n' || c == '\t') {
+            printf("\n");
+            state = OUT;
+        }
+        else if(state == OUT) {
+            state = IN;
+            ++nw;
+        }
     }
+    printf("%s%d\n","Words: ",nw);
 }
