@@ -22,5 +22,4 @@ int main()
             ++nw;
         }
     }
-    printf("%s%d\n","Words: ",nw);
 }
