@@ -4,21 +4,20 @@
 #define OUT 0
 int main(int argv, char argc[])
 {
-    int c,nl,nw,nc,state;
-    state = OUT;
-    nl=nw=nc=0;
-    while((c=getchar()) != EOF) {
-        ++nc;
-        if(c=='\n')
-            ++nl;
-        if(c == ' ' || c == '\n' || c == '\t')
-            state = OUT;
+    int c,char_count,i;
 
-        else if(state == OUT) {
-            state = IN;
-            ++nw;
+    while((c=getchar()) != EOF) {
+        ++char_count;
+        if(c == ' ' || c == '\t' || c == '\n') {
+            //printf("%d\n",char_count-1);
+            char_count=0;
         }
     }
-    printf("%s%d\n","Words: ",nw);
+//Print Histogram
+    printf("\n");
+    for(i=1; i<15; ++i) {
+        printf("%d\n",i);
+    }
+    printf("%s\n","15+");
+    return 0;
 }
-
