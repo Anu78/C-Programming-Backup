@@ -2,7 +2,7 @@
 #include <stdio.h>
 #define IN 1
 #define OUT 0
-int main(int argv, char argc[])
+int main()
 {
     int c,char_count,i;
 
