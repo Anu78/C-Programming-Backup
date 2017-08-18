@@ -4,14 +4,19 @@
 #define OUT 0
 int main()
 {
-    int c,char_count,i;
+    int array[50] = {};
+    int c,char_count=0,i,arrayPosition=0;
 
     while((c=getchar()) != EOF) {
         ++char_count;
         if(c == ' ' || c == '\t' || c == '\n') {
-            //printf("%d\n",char_count-1);
+            array[arrayPosition] = char_count-1;
             char_count=0;
+            arrayPosition++;
         }
+    }
+    for(int j=0; j < arrayPosition; j++) {
+        printf("%d\n",array[j]);
     }
 //Print Histogram
     printf("\n");
