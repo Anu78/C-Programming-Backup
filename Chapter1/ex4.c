@@ -1,4 +1,4 @@
-/*This excersize was to make the corresponding Celsius to Farenheight table*/
+/*This exercixe was to make the corresponding Celsius to Farenheight table*/
 
 #include <stdio.h>
 
