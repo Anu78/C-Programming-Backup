@@ -1,3 +1,4 @@
+//printing all the character
 #include <stdio.h>
 
 int main()

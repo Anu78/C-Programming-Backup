@@ -1,4 +1,4 @@
-/*This excersize was to create headings for the table that the function generated*/
+/*This exercise was to create headings for the table that the function generated*/
 
 #include <stdio.h>
 
@@ -10,5 +10,3 @@ int main() {
         printf("%3.0f %6.1f\n", fahr,celsius);
     }
 }
-
-
