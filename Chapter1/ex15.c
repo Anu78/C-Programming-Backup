@@ -5,7 +5,7 @@
 
 int convert(int number, int choice)
 {
-    float final_value = 2.01;
+    float final_value = 2.01; 
     if(choice == 0) {
         final_value = (number - 32)*(5.0/9.0);
         printf("%4.2f",final_value);
